@@ -1,6 +1,6 @@
 var sec = [];	
+var vals = [];
 var f = $('form[name="frmSecurity"]');
-var vals = []
 //populates passed select element
 function selectPopulate(sel) {
 	$.each(sec, function (j, item) {
