@@ -10,7 +10,7 @@ function activate_login() {
     } else {
       //configure the login animation
       //dim background
-      //$("body").prepend("<div id='login_active_bg' class='login_active' onclick='deactivate_login();'></div>")
+      $("body").prepend("<div id='login_active_bg' class='login_active' onclick='deactivate_login();'></div>")
       //move login
       $("#login_box").addClass("login_active");  
       //$("#login_box form").prepend("<div id='login_heading' class='login-heading'><h4>Partner Log In</h4><span class='login-close' onclick='deactivate_login();'>&times;</span></div>");
@@ -23,7 +23,7 @@ function activate_login() {
 }
 function deactivate_login() {
   //remove animated login elements
-  //$("#login_active_bg").remove();
+  $("#login_active_bg").remove();
   $("#login_box").removeClass("login_active"); 
   //$("#login_heading").remove();
 }
