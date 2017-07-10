@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#login_box form input").attr("onfocus", "activate_login();")
+  $("#login_box").append("<a href='passwordhelp' class='pw_help'>Forgot password?</a>")
 });
 function activate_login() {
   var login = $("#login_box");  
